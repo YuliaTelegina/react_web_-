@@ -1,0 +1,168 @@
+.App {}
+
+div.itemFull {
+  margin: 10px 15px;
+  padding: 7px 10px 20px;
+  border: #333 solid 1px;
+  border-radius: 5px;
+  width: 850px;
+
+}
+
+div.itemFirstLine {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
+span.liteGray {
+  color: #EEE;
+}
+
+span.liteGrayBold {
+
+  color: #EEE;
+  font-weight: 500;
+}
+
+span.itemRight {
+  margin-right: 20px;
+}
+
+span.itemSentPositive,
+span.itemSentNegative,
+span.itemSentNeutral {
+  background-color: #34FF78;
+  float: right;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin-top: -3px;
+}
+
+span.itemSentNegative {
+  background-color: #FF5678;
+}
+
+span.itemSentNeutral {
+  background-color: #C2C4C8;
+}
+
+span.itemInfo {
+  border: #999 2px solid;
+  float: right;
+  padding: 2px 7px;
+  font-weight: 800;
+  margin-top: -3px;
+  margin-left: 15px;
+
+}
+
+
+span.frmCheckBox {
+  float: right;
+  margin-top: -3px;
+  margin-left: 12px;
+
+}
+
+
+.itemCheckBox {
+  height: 22px;
+  width: 22px;
+  accent-color: desired-color;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+
+.pseudocheckbox::before {
+  content: "\00A0";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 2px;
+  margin-right: 6px;
+  vertical-align: baseline;
+
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #808080;
+}
+
+input[type=checkbox]:checked+.pseudocheckbox::before {
+  content: "\2713";
+}
+
+
+div.itemTitle {
+  font-size: 18px;
+  color: #0067FF;
+  margin-bottom: 12px;
+}
+
+div.itemContent {
+  margin-bottom: 12px;
+  line-height: 1.6em;
+}
+
+
+div.itemSourceLine {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+span.itemDomen a, p.contentMoreLess {
+  color: #0067FF;
+  cursor: pointer;
+}
+
+div.itemSourceLine img {
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+  vertical-align: text-top;
+
+}
+
+span.contentKeyWord {
+  background-color: #0067FF;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+
+div.keyWords {
+  font-size: 13px;
+  color: #999;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+div.keyWords span.currKeyWord {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: #333 solid 1px;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+div.keyWords span.showAllLessKW {
+  padding: 5px 15px;
+  color: #0067FF;
+  cursor: pointer;
+
+
+}
